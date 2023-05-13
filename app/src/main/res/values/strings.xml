@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Form Android Studio</string>
+
+    <string-array name="kotaAsal">
+        <item>Pilih Kota Asal</item>
+        <item>Palembang</item>
+        <item>Linggau</item>
+        <item>Padang</item>
+        <item>Lampung</item>
+    </string-array>
+</resources>

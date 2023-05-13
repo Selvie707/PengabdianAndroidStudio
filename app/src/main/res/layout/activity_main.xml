@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANDROID STUDIO"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#267DD2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FORMULIR PENDAFTARAN"
+                android:textSize="22sp"
+                android:letterSpacing="0.2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/androidstudio"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nama"
+                    android:drawableStart="@drawable/ic_person"
+                    android:inputType="text"
+                    android:layout_marginBottom="20dp"
+                    android:padding="8dp"
+                    android:drawableTint="#267DD2"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/bg_corner"
+                    />
+
+                <EditText
+                    android:id="@+id/et_noWhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nomor Whatsapp"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#267DD2"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_corner"
+                    />
+
+                <EditText
+                    android:id="@+id/et_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Alamat Lengkap"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#267DD2"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_corner"
+                    />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#267DD2"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_corner"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_kota"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_radiobutton"
+                    android:entries="@array/kotaAsal"
+                    android:layout_marginBottom="20dp"
+                    android:padding="8dp"
+                    android:paddingStart="38dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_jk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/rb_lk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-Laki"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan"
+                        android:layout_weight="1"
+                        />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_daftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="32dp"
+                    android:backgroundTint="#3b9eff"
+                    android:layout_marginTop="32dp"
+                    android:text="DAFTAR"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
